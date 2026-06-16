@@ -1,0 +1,38 @@
+# =============================================================================
+# requirements.txt — wildfire_distribution_resilience
+#
+# Install with:
+#   (.venv) PS> pip install -r requirements.txt
+# =============================================================================
+
+# ── Graph analysis ────────────────────────────────────────────────────────────
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+
+# ── Geospatial / FlamMap processing ──────────────────────────────────────────
+rasterio>=1.3
+shapely>=2.0
+pyproj>=3.6
+geopandas>=0.14
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.9
+seaborn>=0.13
+
+# ── Power systems ─────────────────────────────────────────────────────────────
+pandapower>=2.14
+py-dss-interface>=1.0        # OpenDSS Python interface
+
+# ── Machine learning / PINN ───────────────────────────────────────────────────
+torch>=2.3                   # PyTorch (CPU — for GPU add: --index-url https://download.pytorch.org/whl/cu121)
+tensorflow>=2.16             # TensorFlow / Keras
+scikit-learn>=1.5
+
+# ── Notebooks ────────────────────────────────────────────────────────────────
+jupyter>=1.0
+ipykernel>=6.29
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0           # load .env files for local paths
+tqdm>=4.66                   # progress bars
