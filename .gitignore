@@ -1,0 +1,64 @@
+# =============================================================================
+# .gitignore — wildfire_distribution_resilience
+# =============================================================================
+
+# ── Data files (large, sensitive — never commit) ──────────────────────────────
+data/
+!data/**/.gitkeep
+
+# ── Generated outputs ─────────────────────────────────────────────────────────
+outputs/
+!outputs/**/.gitkeep
+
+# ── Python virtual environment ────────────────────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── PyTorch / TensorFlow model weights ───────────────────────────────────────
+*.pt
+*.pth
+*.h5
+*.keras
+*.ckpt
+*.ckpt.index
+*.ckpt.data-*
+
+# ── Environment variables (secrets, API keys, local paths) ───────────────────
+.env
+*.env
+
+# ── VS Code workspace settings ───────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+
+# ── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Raster / GIS files (large) ───────────────────────────────────────────────
+*.tif
+*.tiff
+*.lcp
+*.shp
+*.dbf
+*.shx
+*.prj
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
