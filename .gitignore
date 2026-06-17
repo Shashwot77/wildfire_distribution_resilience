@@ -7,8 +7,8 @@ data/
 !data/**/.gitkeep
 
 # ── Generated outputs ─────────────────────────────────────────────────────────
-outputs/
-!outputs/**/.gitkeep
+#outputs/
+#!outputs/**/.gitkeep
 
 # ── Python virtual environment ────────────────────────────────────────────────
 .venv/

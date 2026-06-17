@@ -450,7 +450,7 @@ for bus, pole in poles.items():
         c = FCOLS[pole['feeder']]
         ax.plot([poles[parent]['longitude'], pole['longitude']],
                 [poles[parent]['latitude'],  pole['latitude']],
-                color=c, lw=0.5, alpha=0.35, zorder=1)
+                color=c, lw=1.5, alpha=0.45, zorder=1)
 
 # Pole markers by type
 for label in ['S1', 'S2', 'S3']:
@@ -471,13 +471,13 @@ for label in ['S1', 'S2', 'S3']:
     if e_xy:
         ax.scatter(*zip(*e_xy),  c='white', s=150, marker='*', zorder=8)
     if m3_xy:
-        ax.scatter(*zip(*m3_xy), c=c, s=20, marker='s', alpha=0.9, zorder=4)
+        ax.scatter(*zip(*m3_xy), c=c, s=20, marker='s', alpha=0.7, zorder=4)
     if m1_xy:
-        ax.scatter(*zip(*m1_xy), c=c, s=10, marker='o', alpha=0.7, zorder=3)
+        ax.scatter(*zip(*m1_xy), c=c, s=10, marker='o', alpha=0.5, zorder=3)
     if l_xy:
-        ax.scatter(*zip(*l_xy),  c=c, s=14, marker='^', alpha=0.85, zorder=5)
+        ax.scatter(*zip(*l_xy),  c=c, s=14, marker='^', alpha=0.65, zorder=5)
     if np_xy:
-        ax.scatter(*zip(*np_xy), c=c, s=8,  marker='D', alpha=0.6, zorder=3)
+        ax.scatter(*zip(*np_xy), c=c, s=8,  marker='D', alpha=0.4, zorder=3)
 
 # Substation markers
 for label, root in SOURCES.items():
